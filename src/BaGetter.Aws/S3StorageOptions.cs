@@ -26,6 +26,8 @@ public class S3StorageOptions : IValidatableObject
 
     public bool UseInstanceProfile { get; set; }
 
+    public bool ForcePathStyle { get; set; }
+
     public string AssumeRoleArn { get; set; }
 
     public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
